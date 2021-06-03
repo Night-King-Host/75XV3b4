@@ -52,6 +52,8 @@ window.midExploit = function()
     if('p1' in params)
         scripts.push(params.p1);
     scripts.push('netcat.js');
+    if('p2' in params)
+    scripts.push(params.p2);
     preloadScripts(scripts, go);
 }
 
